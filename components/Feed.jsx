@@ -29,7 +29,7 @@ const Feed = () => {
     (async () => {
       const res = await fetch("/api/prompt");
       const data = await res.json();
-      setProviders(data);
+      setAllPosts(data);
     })();
   };
 
